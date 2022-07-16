@@ -1,0 +1,119 @@
+@import "core";
+.background {
+  font-family: "29ltbukrabold";
+  background-color: $accet-color;
+  .MaxWidth {
+    max-width: 80%;
+    margin: 0 auto;
+    .dFlex {
+      padding: 10% 0 5% 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      position: relative;
+      &::before {
+        content: "";
+        height: 0.2vh;
+        top: 1%;
+        width: 100%;
+        background-color: $background-color;
+        position: absolute;
+      }
+      &::after {
+        content: "";
+        height: 0.2vh;
+        bottom: 1%;
+        width: 100%;
+        background-color: #f6f4f513;
+        position: absolute;
+      }
+      .LinksSideFlex {
+        display: flex;
+        width: 50%;
+        color: $white-color;
+        .LinksContainer {
+          width: 100%;
+          font-size: 1vw;
+
+          display: flex;
+          flex-direction: column;
+          @media (max-width: 900px) {
+            font-size: 1.5vw;
+          }
+          @media (max-width: 650px) {
+            font-size: 1.8vw;
+          }
+          @media (max-width: 650px) {
+            font-size: 2vw;
+          }
+          .Linksp1 {
+            gap: 15%;
+            display: flex;
+            width: 100%;
+            padding-bottom: 5%;
+          }
+          .Linksp2 {
+            gap: 10%;
+            display: flex;
+          }
+        }
+        .link {
+          width: max-content;
+        }
+      }
+    }
+    .SocialSideFlex {
+      display: flex;
+      flex-direction: column;
+      width: 50%;
+ 
+      align-items: center;
+      .SocialIcons {
+        gap: 1%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        > * {
+          border: 1px solid #f6f4f538;
+          padding: 5px;
+          border-radius: 10px;
+          @media (max-width: 900px) {
+            width: 4vw;
+            height: 6vh;
+          }
+          @media (max-width: 650px) {
+            width: 5.5vw;
+            height: 7vh;
+          }
+          @media (max-width: 450px) {
+            width: 7vw;
+            height: 6vh;
+          }
+          @media (max-width: 400px) {
+            width: 8vw;
+            height: 4vh;
+          }
+
+        }
+      }
+    }
+  }
+  .copyRight {
+    color: $white-color;
+    font-size: 0.75vw;
+    display: flex;
+    opacity: 0.5;
+    justify-content: center;
+    font-family: "29ltbukralight";
+    margin: 0;
+    padding: 1vh 0;
+    @media (max-width: 450px) {
+      font-size: 1.5vw;
+
+    }
+  }
+}

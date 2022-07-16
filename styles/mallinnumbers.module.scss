@@ -1,0 +1,66 @@
+@import "core";
+.maxWidth {
+  background: $background-color;
+  margin: 0 auto;
+}
+.dflex {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  color: $accet-color;
+  gap: 120px;
+  justify-content: center;
+  padding: 80px 0;
+  font-family: "29ltbukrabold";
+  flex-wrap: nowrap;
+  @media (max-width: 1100px) {
+    gap: 60px;
+  }
+  @media (max-width: 850px) {
+    gap: 30px;
+  }
+  @media (max-width: 750px) {
+    flex-wrap: wrap;
+    gap: 60px;
+  }
+  .dflexCoulmn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    @media (max-width: 750px) {
+      width: 200px;
+      &:nth-child(1) {
+        order: 5;
+        display: flex;
+        justify-self: flex-end;
+      }
+      &:nth-child(2) {
+        order: 4;
+      }
+      &:nth-child(3) {
+        order: 3;
+      }
+      &:nth-child(4) {
+        order: 2;
+      }
+      &:nth-child(5) {
+        order: 1;
+      }
+    }
+
+    .numbers {
+      font-size: 30px;
+      padding: 10px;
+    }
+    .posRelative {
+      position: relative;
+      .toPowerOf {
+        position: absolute;
+        font-size: 16px;
+        top: 0px;
+      }
+    }
+  }
+}

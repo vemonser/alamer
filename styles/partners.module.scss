@@ -1,0 +1,44 @@
+@import "core";
+
+.MaxWidth {
+  font-family: "29ltbukrabold";
+  display: flex;
+  max-width: 80%;
+  margin: 0 auto;
+  color: $accet-color;
+  justify-content: space-between;
+  padding-bottom: 80px;
+  h1 {
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      border-radius: 10px;
+      height: 5px;
+      width: 45px;
+      bottom: 0px;
+      right: 0;
+      background: $primary-orange;
+    }
+  }
+
+  .dflex {
+    display: flex;
+    gap: 50px;
+    .img1 {
+      position: relative;
+      width: 187px;
+      border-radius: 10px;
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.466); 
+      height: 100px;
+    }
+    .img2 {
+      position: relative;
+      width: 187px;
+      height: 100px;
+      background-color: #000000;
+      border-radius: 10px;
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.466); 
+    }
+  }
+}
